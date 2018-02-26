@@ -5,11 +5,11 @@ This is a simple manager for managing workspace of intellij idea.
 For to save workspace, please, use this command:
 
 ```
-saveworkspace
+saveworkspace <taskname>
 ```
 For restore workspace, please, use this command:
 ```
-restoreworkspace
+restoreworkspace <taskname>
 ```
 
 ### Installing

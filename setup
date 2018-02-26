@@ -1,0 +1,12 @@
+echo "#####################################"
+echo "Please, input your project path:"
+read PROJECT_DIR
+
+echo >> ~/.bashrc
+echo "#idea workspace manager:" >> ~/.bashrc
+echo export PROJECT_DIR=\"$PROJECT_DIR\" >> ~/.bashrc
+echo export WORKSPACE_DIR=\"$PROJECT_DIR/.idea\" >> ~/.bashrc
+echo export WORKSPACE_BACKUP_DIR=\"$PROJECT_DIR/ideaworkspacemanager\" >> ~/.bashrc
+
+sudo ln -sf "$(pwd)/saveworkspace" /usr/bin/saveworkspace
+sudo ln -sf "$(pwd)/restoreworkspace" /usr/bin/restoreworkspace

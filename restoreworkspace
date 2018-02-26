@@ -1,0 +1,4 @@
+ls "$WORKSPACE_BACKUP_DIR"
+echo "Please, input only filename"
+read filename
+cp -f "$WORKSPACE_BACKUP_DIR/$filename.xml" "$WORKSPACE_DIR/workspace.xml"

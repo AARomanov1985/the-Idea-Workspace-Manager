@@ -1,0 +1,2 @@
+mkdir -p "$WORKSPACE_BACKUP_DIR"
+cp -f "$WORKSPACE_DIR/workspace.xml" "$WORKSPACE_BACKUP_DIR/$1.xml"

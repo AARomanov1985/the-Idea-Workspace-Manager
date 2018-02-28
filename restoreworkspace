@@ -1,4 +1,10 @@
-ls "$WORKSPACE_BACKUP_DIR"
-echo "Please, input only filename"
-read filename
+if test -z "$1"
+then
+	ls "$WORKSPACE_BACKUP_DIR"
+	echo "Please, input only filename"
+	read filename
+else
+	filename=$1
+fi
+
 cp -f "$WORKSPACE_BACKUP_DIR/$filename.xml" "$WORKSPACE_DIR/workspace.xml"
